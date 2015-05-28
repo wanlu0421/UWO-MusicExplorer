@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0949FC441A95944000C624DD /* JDNewsRestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949FC431A95944000C624DD /* JDNewsRestModel.m */; };
+		0949FC4C1A9667D200C624DD /* JDRestKitConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949FC4B1A9667D200C624DD /* JDRestKitConfiguration.m */; };
+		0949FC4F1A9690F400C624DD /* JDSongDescriptorRestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949FC4E1A9690F400C624DD /* JDSongDescriptorRestModel.m */; };
+		0949FC521A969FE600C624DD /* JDVideoDescriptorRestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949FC511A969FE600C624DD /* JDVideoDescriptorRestModel.m */; };
+		0949FC551A96A01200C624DD /* JDAudioDescriptorRestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949FC541A96A01200C624DD /* JDAudioDescriptorRestModel.m */; };
+		0949FC5B1A96B92D00C624DD /* application.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0949FC5A1A96B92D00C624DD /* application.plist */; };
+		0949FC5E1A96EA1300C624DD /* JDOauth2TokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949FC5D1A96EA1300C624DD /* JDOauth2TokenResponse.m */; };
+		095B201719E35AC2004BB1D9 /* JDMusicianButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 095B201619E35AC2004BB1D9 /* JDMusicianButton.m */; };
+		095B201919E36D58004BB1D9 /* mute_icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 095B201819E36D58004BB1D9 /* mute_icon.gif */; };
+		096C70BD1AA94265009EBB71 /* entities.strings in Resources */ = {isa = PBXBuildFile; fileRef = 096C70BC1AA94265009EBB71 /* entities.strings */; };
+		096C70C01AA94799009EBB71 /* JDStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096C70BF1AA94799009EBB71 /* JDStoreViewController.m */; };
+		096C70C41AA95AFD009EBB71 /* JDStoreSongSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 096C70C31AA95AFD009EBB71 /* JDStoreSongSearchTableViewCell.m */; };
+		096C70C71AA960E4009EBB71 /* JDStoreSongDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096C70C61AA960E4009EBB71 /* JDStoreSongDetailsViewController.m */; };
+		0992AEDC19C925810053D499 /* JDSongPickerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0992AEDB19C925810053D499 /* JDSongPickerViewController.mm */; };
+		09BFF9281A729241009D650F /* JDStatisticsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFF9271A729241009D650F /* JDStatisticsLogger.m */; };
+		09F16DA11A66F3E900AA7B5C /* JDSongSelectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F16DA01A66F3E900AA7B5C /* JDSongSelectionTableViewCell.m */; };
+		09F16DA31A672CF400AA7B5C /* sheetmusic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F16DA21A672CF400AA7B5C /* sheetmusic.jpg */; };
+		D030B269199D5CDD00C58F3D /* JDPlaybackView.m in Sources */ = {isa = PBXBuildFile; fileRef = D030B268199D5CDD00C58F3D /* JDPlaybackView.m */; };
+		D030B26C199D5EDE00C58F3D /* JDAVPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D030B26B199D5EDE00C58F3D /* JDAVPlayerManager.m */; };
+		D030B26F199D642700C58F3D /* JDAudioTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = D030B26E199D642700C58F3D /* JDAudioTrack.m */; };
+		D068F0391957916E003D2D27 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068F0371957916E003D2D27 /* AudioToolbox.framework */; };
+		D068F03A1957916E003D2D27 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068F0381957916E003D2D27 /* CoreAudio.framework */; };
+		D068F03E195791F9003D2D27 /* AQPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D068F03D195791F9003D2D27 /* AQPlayer.mm */; };
+		D068F04A195794DE003D2D27 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D068F048195794DE003D2D27 /* CAStreamBasicDescription.cpp */; };
+		D068F04E195794FD003D2D27 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D068F04C195794FD003D2D27 /* CAXException.cpp */; };
+		D068F0511957951C003D2D27 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D068F04F1957951C003D2D27 /* CADebugMacros.cpp */; };
+		D068F05419579532003D2D27 /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D068F05219579532003D2D27 /* CADebugPrintf.cpp */; };
+		D068F05719579871003D2D27 /* JDAVManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = D068F05619579871003D2D27 /* JDAVManager.mm */; };
+		D068F0591957A2DA003D2D27 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068F0581957A2DA003D2D27 /* MediaPlayer.framework */; };
+		D068F0681957BE10003D2D27 /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D068F0661957BE10003D2D27 /* CAHostTimeBase.cpp */; };
+		D0777236192ACD6200F9993A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0777235192ACD6100F9993A /* Foundation.framework */; };
+		D0777238192ACD6200F9993A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0777237192ACD6200F9993A /* CoreGraphics.framework */; };
+		D077723A192ACD6200F9993A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0777239192ACD6200F9993A /* UIKit.framework */; };
+		D0777240192ACD6200F9993A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D077723E192ACD6200F9993A /* InfoPlist.strings */; };
+		D0777242192ACD6200F9993A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0777241192ACD6200F9993A /* main.m */; };
+		D0777246192ACD6200F9993A /* JDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0777245192ACD6200F9993A /* JDAppDelegate.m */; };
+		D0777249192ACD6200F9993A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0777247192ACD6200F9993A /* Main_iPhone.storyboard */; };
+		D077724C192ACD6200F9993A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D077724A192ACD6200F9993A /* Main_iPad.storyboard */; };
+		D077724F192ACD6200F9993A /* JDViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D077724E192ACD6200F9993A /* JDViewController.mm */; };
+		D0777251192ACD6200F9993A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0777250192ACD6200F9993A /* Images.xcassets */; };
+		E7515A8D55BFB52EED9D1B22 /* libPods-MusicExplorer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AECBAE0BC8A897486010CB5 /* libPods-MusicExplorer.a */; };
+		F388980B1970CA0700BCE767 /* JDAudioTrackInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F388980A1970CA0700BCE767 /* JDAudioTrackInfo.m */; };
+		F388980E1970CBB800BCE767 /* JDVideoTrackInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F388980D1970CBB800BCE767 /* JDVideoTrackInfo.m */; };
+		F38898111970CDF200BCE767 /* JDXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F38898101970CDF200BCE767 /* JDXMLParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0949FC421A95944000C624DD /* JDNewsRestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNewsRestModel.h; sourceTree = "<group>"; };
+		0949FC431A95944000C624DD /* JDNewsRestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNewsRestModel.m; sourceTree = "<group>"; };
+		0949FC4A1A9667D200C624DD /* JDRestKitConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRestKitConfiguration.h; sourceTree = "<group>"; };
+		0949FC4B1A9667D200C624DD /* JDRestKitConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDRestKitConfiguration.m; sourceTree = "<group>"; };
+		0949FC4D1A9690F400C624DD /* JDSongDescriptorRestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSongDescriptorRestModel.h; sourceTree = "<group>"; };
+		0949FC4E1A9690F400C624DD /* JDSongDescriptorRestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSongDescriptorRestModel.m; sourceTree = "<group>"; };
+		0949FC501A969FE600C624DD /* JDVideoDescriptorRestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDVideoDescriptorRestModel.h; sourceTree = "<group>"; };
+		0949FC511A969FE600C624DD /* JDVideoDescriptorRestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDVideoDescriptorRestModel.m; sourceTree = "<group>"; };
+		0949FC531A96A01200C624DD /* JDAudioDescriptorRestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAudioDescriptorRestModel.h; sourceTree = "<group>"; };
+		0949FC541A96A01200C624DD /* JDAudioDescriptorRestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAudioDescriptorRestModel.m; sourceTree = "<group>"; };
+		0949FC5A1A96B92D00C624DD /* application.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = application.plist; sourceTree = "<group>"; };
+		0949FC5C1A96EA1300C624DD /* JDOauth2TokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDOauth2TokenResponse.h; sourceTree = "<group>"; };
+		0949FC5D1A96EA1300C624DD /* JDOauth2TokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDOauth2TokenResponse.m; sourceTree = "<group>"; };
+		095B201519E35AC2004BB1D9 /* JDMusicianButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMusicianButton.h; sourceTree = "<group>"; };
+		095B201619E35AC2004BB1D9 /* JDMusicianButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMusicianButton.m; sourceTree = "<group>"; };
+		095B201819E36D58004BB1D9 /* mute_icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mute_icon.gif; sourceTree = "<group>"; };
+		096C70BC1AA94265009EBB71 /* entities.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = entities.strings; sourceTree = "<group>"; };
+		096C70BE1AA94799009EBB71 /* JDStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStoreViewController.h; sourceTree = "<group>"; };
+		096C70BF1AA94799009EBB71 /* JDStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStoreViewController.m; sourceTree = "<group>"; };
+		096C70C21AA95AFD009EBB71 /* JDStoreSongSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStoreSongSearchTableViewCell.h; sourceTree = "<group>"; };
+		096C70C31AA95AFD009EBB71 /* JDStoreSongSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStoreSongSearchTableViewCell.m; sourceTree = "<group>"; };
+		096C70C51AA960E4009EBB71 /* JDStoreSongDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStoreSongDetailsViewController.h; sourceTree = "<group>"; };
+		096C70C61AA960E4009EBB71 /* JDStoreSongDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStoreSongDetailsViewController.m; sourceTree = "<group>"; };
+		0992AEDA19C925800053D499 /* JDSongPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSongPickerViewController.h; sourceTree = "<group>"; };
+		0992AEDB19C925810053D499 /* JDSongPickerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JDSongPickerViewController.mm; sourceTree = "<group>"; };
+		09BFF9261A729241009D650F /* JDStatisticsLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatisticsLogger.h; sourceTree = "<group>"; };
+		09BFF9271A729241009D650F /* JDStatisticsLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatisticsLogger.m; sourceTree = "<group>"; };
+		09F16D9F1A66F3E900AA7B5C /* JDSongSelectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSongSelectionTableViewCell.h; sourceTree = "<group>"; };
+		09F16DA01A66F3E900AA7B5C /* JDSongSelectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSongSelectionTableViewCell.m; sourceTree = "<group>"; };
+		09F16DA21A672CF400AA7B5C /* sheetmusic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sheetmusic.jpg; sourceTree = "<group>"; };
+		5AECBAE0BC8A897486010CB5 /* libPods-MusicExplorer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MusicExplorer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7921FB16B85C078AEC75EE7B /* Pods-MusicExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicExplorer/Pods-MusicExplorer.release.xcconfig"; sourceTree = "<group>"; };
+		93AC306536B42797533C1B4C /* Pods-MusicExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicExplorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicExplorer/Pods-MusicExplorer.debug.xcconfig"; sourceTree = "<group>"; };
+		D030B267199D5CDD00C58F3D /* JDPlaybackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPlaybackView.h; sourceTree = "<group>"; };
+		D030B268199D5CDD00C58F3D /* JDPlaybackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPlaybackView.m; sourceTree = "<group>"; };
+		D030B26A199D5EDE00C58F3D /* JDAVPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAVPlayerManager.h; sourceTree = "<group>"; };
+		D030B26B199D5EDE00C58F3D /* JDAVPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAVPlayerManager.m; sourceTree = "<group>"; wrapsLines = 1; };
+		D030B26D199D642700C58F3D /* JDAudioTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAudioTrack.h; sourceTree = "<group>"; };
+		D030B26E199D642700C58F3D /* JDAudioTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAudioTrack.m; sourceTree = "<group>"; };
+		D068F0371957916E003D2D27 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D068F0381957916E003D2D27 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D068F03C195791F9003D2D27 /* AQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQPlayer.h; sourceTree = "<group>"; };
+		D068F03D195791F9003D2D27 /* AQPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AQPlayer.mm; sourceTree = "<group>"; };
+		D068F048195794DE003D2D27 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		D068F049195794DE003D2D27 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		D068F04B195794EF003D2D27 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		D068F04C195794FD003D2D27 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		D068F04D195794FD003D2D27 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		D068F04F1957951C003D2D27 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		D068F0501957951C003D2D27 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		D068F05219579532003D2D27 /* CADebugPrintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugPrintf.cpp; sourceTree = "<group>"; };
+		D068F05319579532003D2D27 /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		D068F05519579871003D2D27 /* JDAVManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAVManager.h; sourceTree = "<group>"; };
+		D068F05619579871003D2D27 /* JDAVManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JDAVManager.mm; sourceTree = "<group>"; };
+		D068F0581957A2DA003D2D27 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D068F0661957BE10003D2D27 /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAHostTimeBase.cpp; sourceTree = "<group>"; };
+		D068F0671957BE10003D2D27 /* CAHostTimeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAHostTimeBase.h; sourceTree = "<group>"; };
+		D0777232192ACD6100F9993A /* MusicExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0777235192ACD6100F9993A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D0777237192ACD6200F9993A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0777239192ACD6200F9993A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D077723D192ACD6200F9993A /* MusicExplorer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicExplorer-Info.plist"; sourceTree = "<group>"; };
+		D077723F192ACD6200F9993A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0777241192ACD6200F9993A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0777243192ACD6200F9993A /* MusicExplorer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicExplorer-Prefix.pch"; sourceTree = "<group>"; };
+		D0777244192ACD6200F9993A /* JDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDAppDelegate.h; sourceTree = "<group>"; };
+		D0777245192ACD6200F9993A /* JDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAppDelegate.m; sourceTree = "<group>"; };
+		D0777248192ACD6200F9993A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D077724B192ACD6200F9993A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D077724D192ACD6200F9993A /* JDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDViewController.h; sourceTree = "<group>"; };
+		D077724E192ACD6200F9993A /* JDViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = JDViewController.mm; sourceTree = "<group>"; };
+		D0777250192ACD6200F9993A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0777257192ACD6200F9993A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D077725F192ACD6200F9993A /* MusicExplorerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicExplorerTests-Info.plist"; sourceTree = "<group>"; };
+		D0777261192ACD6200F9993A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0777263192ACD6200F9993A /* UwoMusicAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UwoMusicAppTests.m; sourceTree = "<group>"; };
+		F38898091970CA0700BCE767 /* JDAudioTrackInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JDAudioTrackInfo.h; path = ../JDAudioTrackInfo.h; sourceTree = "<group>"; };
+		F388980A1970CA0700BCE767 /* JDAudioTrackInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JDAudioTrackInfo.m; path = ../JDAudioTrackInfo.m; sourceTree = "<group>"; };
+		F388980C1970CBB800BCE767 /* JDVideoTrackInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDVideoTrackInfo.h; sourceTree = "<group>"; };
+		F388980D1970CBB800BCE767 /* JDVideoTrackInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDVideoTrackInfo.m; sourceTree = "<group>"; };
+		F388980F1970CDF200BCE767 /* JDXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDXMLParser.h; sourceTree = "<group>"; };
+		F38898101970CDF200BCE767 /* JDXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDXMLParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D077722F192ACD6100F9993A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D068F0591957A2DA003D2D27 /* MediaPlayer.framework in Frameworks */,
+				D068F0391957916E003D2D27 /* AudioToolbox.framework in Frameworks */,
+				D068F03A1957916E003D2D27 /* CoreAudio.framework in Frameworks */,
+				D0777238192ACD6200F9993A /* CoreGraphics.framework in Frameworks */,
+				D077723A192ACD6200F9993A /* UIKit.framework in Frameworks */,
+				D0777236192ACD6200F9993A /* Foundation.framework in Frameworks */,
+				E7515A8D55BFB52EED9D1B22 /* libPods-MusicExplorer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0949FC411A95940500C624DD /* RestModels */ = {
+			isa = PBXGroup;
+			children = (
+				0949FC421A95944000C624DD /* JDNewsRestModel.h */,
+				0949FC431A95944000C624DD /* JDNewsRestModel.m */,
+				0949FC4D1A9690F400C624DD /* JDSongDescriptorRestModel.h */,
+				0949FC4E1A9690F400C624DD /* JDSongDescriptorRestModel.m */,
+				0949FC501A969FE600C624DD /* JDVideoDescriptorRestModel.h */,
+				0949FC511A969FE600C624DD /* JDVideoDescriptorRestModel.m */,
+				0949FC531A96A01200C624DD /* JDAudioDescriptorRestModel.h */,
+				0949FC541A96A01200C624DD /* JDAudioDescriptorRestModel.m */,
+				0949FC5C1A96EA1300C624DD /* JDOauth2TokenResponse.h */,
+				0949FC5D1A96EA1300C624DD /* JDOauth2TokenResponse.m */,
+			);
+			name = RestModels;
+			sourceTree = "<group>";
+		};
+		0949FC491A9667B900C624DD /* RestKitConfig */ = {
+			isa = PBXGroup;
+			children = (
+				0949FC4A1A9667D200C624DD /* JDRestKitConfiguration.h */,
+				0949FC4B1A9667D200C624DD /* JDRestKitConfiguration.m */,
+			);
+			name = RestKitConfig;
+			sourceTree = "<group>";
+		};
+		096C70C11AA95AC7009EBB71 /* StoreSongSearching */ = {
+			isa = PBXGroup;
+			children = (
+				096C70BE1AA94799009EBB71 /* JDStoreViewController.h */,
+				096C70BF1AA94799009EBB71 /* JDStoreViewController.m */,
+				096C70C21AA95AFD009EBB71 /* JDStoreSongSearchTableViewCell.h */,
+				096C70C31AA95AFD009EBB71 /* JDStoreSongSearchTableViewCell.m */,
+				096C70C51AA960E4009EBB71 /* JDStoreSongDetailsViewController.h */,
+				096C70C61AA960E4009EBB71 /* JDStoreSongDetailsViewController.m */,
+			);
+			name = StoreSongSearching;
+			sourceTree = "<group>";
+		};
+		09F16D9E1A66DFDC00AA7B5C /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documents;
+			sourceTree = "<group>";
+		};
+		D068F03B19579176003D2D27 /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				D068F0661957BE10003D2D27 /* CAHostTimeBase.cpp */,
+				D068F0671957BE10003D2D27 /* CAHostTimeBase.h */,
+				D068F05219579532003D2D27 /* CADebugPrintf.cpp */,
+				D068F05319579532003D2D27 /* CADebugPrintf.h */,
+				D068F04F1957951C003D2D27 /* CADebugMacros.cpp */,
+				D068F0501957951C003D2D27 /* CADebugMacros.h */,
+				D068F04C195794FD003D2D27 /* CAXException.cpp */,
+				D068F04D195794FD003D2D27 /* CAXException.h */,
+				D068F04B195794EF003D2D27 /* CAMath.h */,
+				D068F048195794DE003D2D27 /* CAStreamBasicDescription.cpp */,
+				D068F049195794DE003D2D27 /* CAStreamBasicDescription.h */,
+			);
+			name = PublicUtility;
+			sourceTree = "<group>";
+		};
+		D068F03F1957924B003D2D27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				096C70BC1AA94265009EBB71 /* entities.strings */,
+				09F16DA21A672CF400AA7B5C /* sheetmusic.jpg */,
+				095B201819E36D58004BB1D9 /* mute_icon.gif */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D0777229192ACD6100F9993A = {
+			isa = PBXGroup;
+			children = (
+				0949FC5A1A96B92D00C624DD /* application.plist */,
+				09F16D9E1A66DFDC00AA7B5C /* Documents */,
+				D077723B192ACD6200F9993A /* UwoMusicApp */,
+				D077725D192ACD6200F9993A /* UwoMusicAppTests */,
+				D0777234192ACD6100F9993A /* Frameworks */,
+				D0777233192ACD6100F9993A /* Products */,
+				D068F03F1957924B003D2D27 /* Resources */,
+				D068F03B19579176003D2D27 /* PublicUtility */,
+				EB0A378B2B41F6FDD1410924 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D0777233192ACD6100F9993A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0777232192ACD6100F9993A /* MusicExplorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0777234192ACD6100F9993A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D068F0581957A2DA003D2D27 /* MediaPlayer.framework */,
+				D068F0371957916E003D2D27 /* AudioToolbox.framework */,
+				D068F0381957916E003D2D27 /* CoreAudio.framework */,
+				D0777235192ACD6100F9993A /* Foundation.framework */,
+				D0777237192ACD6200F9993A /* CoreGraphics.framework */,
+				D0777239192ACD6200F9993A /* UIKit.framework */,
+				D0777257192ACD6200F9993A /* XCTest.framework */,
+				5AECBAE0BC8A897486010CB5 /* libPods-MusicExplorer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D077723B192ACD6200F9993A /* UwoMusicApp */ = {
+			isa = PBXGroup;
+			children = (
+				0949FC491A9667B900C624DD /* RestKitConfig */,
+				0949FC411A95940500C624DD /* RestModels */,
+				D030B267199D5CDD00C58F3D /* JDPlaybackView.h */,
+				D030B268199D5CDD00C58F3D /* JDPlaybackView.m */,
+				D068F03C195791F9003D2D27 /* AQPlayer.h */,
+				D068F03D195791F9003D2D27 /* AQPlayer.mm */,
+				D0777244192ACD6200F9993A /* JDAppDelegate.h */,
+				D0777245192ACD6200F9993A /* JDAppDelegate.m */,
+				D0777247192ACD6200F9993A /* Main_iPhone.storyboard */,
+				D077724A192ACD6200F9993A /* Main_iPad.storyboard */,
+				0992AEDA19C925800053D499 /* JDSongPickerViewController.h */,
+				0992AEDB19C925810053D499 /* JDSongPickerViewController.mm */,
+				D077724D192ACD6200F9993A /* JDViewController.h */,
+				D077724E192ACD6200F9993A /* JDViewController.mm */,
+				095B201519E35AC2004BB1D9 /* JDMusicianButton.h */,
+				095B201619E35AC2004BB1D9 /* JDMusicianButton.m */,
+				D068F05519579871003D2D27 /* JDAVManager.h */,
+				D068F05619579871003D2D27 /* JDAVManager.mm */,
+				F38898091970CA0700BCE767 /* JDAudioTrackInfo.h */,
+				F388980A1970CA0700BCE767 /* JDAudioTrackInfo.m */,
+				F388980C1970CBB800BCE767 /* JDVideoTrackInfo.h */,
+				F388980D1970CBB800BCE767 /* JDVideoTrackInfo.m */,
+				F388980F1970CDF200BCE767 /* JDXMLParser.h */,
+				09F16D9F1A66F3E900AA7B5C /* JDSongSelectionTableViewCell.h */,
+				09F16DA01A66F3E900AA7B5C /* JDSongSelectionTableViewCell.m */,
+				F38898101970CDF200BCE767 /* JDXMLParser.m */,
+				D030B26A199D5EDE00C58F3D /* JDAVPlayerManager.h */,
+				D030B26B199D5EDE00C58F3D /* JDAVPlayerManager.m */,
+				09BFF9261A729241009D650F /* JDStatisticsLogger.h */,
+				09BFF9271A729241009D650F /* JDStatisticsLogger.m */,
+				D030B26D199D642700C58F3D /* JDAudioTrack.h */,
+				D030B26E199D642700C58F3D /* JDAudioTrack.m */,
+				096C70C11AA95AC7009EBB71 /* StoreSongSearching */,
+				D0777250192ACD6200F9993A /* Images.xcassets */,
+				D077723C192ACD6200F9993A /* Supporting Files */,
+			);
+			path = UwoMusicApp;
+			sourceTree = "<group>";
+		};
+		D077723C192ACD6200F9993A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D077723D192ACD6200F9993A /* MusicExplorer-Info.plist */,
+				D077723E192ACD6200F9993A /* InfoPlist.strings */,
+				D0777241192ACD6200F9993A /* main.m */,
+				D0777243192ACD6200F9993A /* MusicExplorer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D077725D192ACD6200F9993A /* UwoMusicAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0777263192ACD6200F9993A /* UwoMusicAppTests.m */,
+				D077725E192ACD6200F9993A /* Supporting Files */,
+			);
+			path = UwoMusicAppTests;
+			sourceTree = "<group>";
+		};
+		D077725E192ACD6200F9993A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D077725F192ACD6200F9993A /* MusicExplorerTests-Info.plist */,
+				D0777260192ACD6200F9993A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB0A378B2B41F6FDD1410924 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93AC306536B42797533C1B4C /* Pods-MusicExplorer.debug.xcconfig */,
+				7921FB16B85C078AEC75EE7B /* Pods-MusicExplorer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0777231192ACD6100F9993A /* MusicExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0777267192ACD6200F9993A /* Build configuration list for PBXNativeTarget "MusicExplorer" */;
+			buildPhases = (
+				99247FD1B1F0B8C3AD8C508D /* Check Pods Manifest.lock */,
+				D077722E192ACD6100F9993A /* Sources */,
+				D077722F192ACD6100F9993A /* Frameworks */,
+				D0777230192ACD6100F9993A /* Resources */,
+				ADE1A69CB2B7AC2B619E6FC1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicExplorer;
+			productName = UwoMusicApp;
+			productReference = D0777232192ACD6100F9993A /* MusicExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D077722A192ACD6100F9993A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Western University";
+				TargetAttributes = {
+					D0777231192ACD6100F9993A = {
+						DevelopmentTeam = 9LBD7R3S9M;
+					};
+				};
+			};
+			buildConfigurationList = D077722D192ACD6100F9993A /* Build configuration list for PBXProject "MusicExplorer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0777229192ACD6100F9993A;
+			productRefGroup = D0777233192ACD6100F9993A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0777231192ACD6100F9993A /* MusicExplorer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0777230192ACD6100F9993A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095B201919E36D58004BB1D9 /* mute_icon.gif in Resources */,
+				0949FC5B1A96B92D00C624DD /* application.plist in Resources */,
+				D077724C192ACD6200F9993A /* Main_iPad.storyboard in Resources */,
+				D0777251192ACD6200F9993A /* Images.xcassets in Resources */,
+				096C70BD1AA94265009EBB71 /* entities.strings in Resources */,
+				D0777249192ACD6200F9993A /* Main_iPhone.storyboard in Resources */,
+				09F16DA31A672CF400AA7B5C /* sheetmusic.jpg in Resources */,
+				D0777240192ACD6200F9993A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99247FD1B1F0B8C3AD8C508D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ADE1A69CB2B7AC2B619E6FC1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicExplorer/Pods-MusicExplorer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D077722E192ACD6100F9993A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096C70C01AA94799009EBB71 /* JDStoreViewController.m in Sources */,
+				0949FC551A96A01200C624DD /* JDAudioDescriptorRestModel.m in Sources */,
+				D068F05419579532003D2D27 /* CADebugPrintf.cpp in Sources */,
+				D068F04E195794FD003D2D27 /* CAXException.cpp in Sources */,
+				096C70C71AA960E4009EBB71 /* JDStoreSongDetailsViewController.m in Sources */,
+				0949FC5E1A96EA1300C624DD /* JDOauth2TokenResponse.m in Sources */,
+				0949FC521A969FE600C624DD /* JDVideoDescriptorRestModel.m in Sources */,
+				F38898111970CDF200BCE767 /* JDXMLParser.m in Sources */,
+				D0777246192ACD6200F9993A /* JDAppDelegate.m in Sources */,
+				F388980B1970CA0700BCE767 /* JDAudioTrackInfo.m in Sources */,
+				D077724F192ACD6200F9993A /* JDViewController.mm in Sources */,
+				0992AEDC19C925810053D499 /* JDSongPickerViewController.mm in Sources */,
+				D068F03E195791F9003D2D27 /* AQPlayer.mm in Sources */,
+				0949FC4F1A9690F400C624DD /* JDSongDescriptorRestModel.m in Sources */,
+				09BFF9281A729241009D650F /* JDStatisticsLogger.m in Sources */,
+				D068F0681957BE10003D2D27 /* CAHostTimeBase.cpp in Sources */,
+				09F16DA11A66F3E900AA7B5C /* JDSongSelectionTableViewCell.m in Sources */,
+				096C70C41AA95AFD009EBB71 /* JDStoreSongSearchTableViewCell.m in Sources */,
+				D030B26C199D5EDE00C58F3D /* JDAVPlayerManager.m in Sources */,
+				0949FC441A95944000C624DD /* JDNewsRestModel.m in Sources */,
+				095B201719E35AC2004BB1D9 /* JDMusicianButton.m in Sources */,
+				D0777242192ACD6200F9993A /* main.m in Sources */,
+				D068F0511957951C003D2D27 /* CADebugMacros.cpp in Sources */,
+				D068F05719579871003D2D27 /* JDAVManager.mm in Sources */,
+				D068F04A195794DE003D2D27 /* CAStreamBasicDescription.cpp in Sources */,
+				0949FC4C1A9667D200C624DD /* JDRestKitConfiguration.m in Sources */,
+				F388980E1970CBB800BCE767 /* JDVideoTrackInfo.m in Sources */,
+				D030B26F199D642700C58F3D /* JDAudioTrack.m in Sources */,
+				D030B269199D5CDD00C58F3D /* JDPlaybackView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D077723E192ACD6200F9993A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D077723F192ACD6200F9993A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D0777247192ACD6200F9993A /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0777248192ACD6200F9993A /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D077724A192ACD6200F9993A /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D077724B192ACD6200F9993A /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D0777260192ACD6200F9993A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0777261192ACD6200F9993A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0777265192ACD6200F9993A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "BF6A6D62-7980-4E24-9452-8D66F08E58B3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0777266192ACD6200F9993A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "BF6A6D62-7980-4E24-9452-8D66F08E58B3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0777268192ACD6200F9993A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93AC306536B42797533C1B4C /* Pods-MusicExplorer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UwoMusicApp/MusicExplorer-Prefix.pch";
+				INFOPLIST_FILE = "UwoMusicApp/MusicExplorer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = MusicExplorer;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D0777269192ACD6200F9993A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7921FB16B85C078AEC75EE7B /* Pods-MusicExplorer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UwoMusicApp/MusicExplorer-Prefix.pch";
+				INFOPLIST_FILE = "UwoMusicApp/MusicExplorer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = MusicExplorer;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D077722D192ACD6100F9993A /* Build configuration list for PBXProject "MusicExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0777265192ACD6200F9993A /* Debug */,
+				D0777266192ACD6200F9993A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0777267192ACD6200F9993A /* Build configuration list for PBXNativeTarget "MusicExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0777268192ACD6200F9993A /* Debug */,
+				D0777269192ACD6200F9993A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D077722A192ACD6100F9993A /* Project object */;
+}

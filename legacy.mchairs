@@ -1,0 +1,85 @@
+<info>
+    
+    <title>Musical Futures</title>
+    <artist>Legacy</artist>
+    <genre>Pop</genre>
+    
+    <video>
+        <file>legacy</file>
+        <extension>mov</extension>
+        <start_time>0</start_time>
+    </video>
+    
+    <audio>
+        <offset>30</offset>
+        <track_count>6</track_count>
+        
+        <track index="0">
+            <file>lacoustic</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Acoustic Guitar</name>
+            <x>103</x>
+            <y>348</y>
+            <width>57</width>
+            <height>152</height>
+        </track>
+        
+        <track index="1">
+            <file>lbass</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Bass</name>
+            <x>344</x>
+            <y>345</y>
+            <width>57</width>
+            <height>152</height>
+        </track>
+        
+        <track index="2">
+            <file>ldrums</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Drums</name>
+            <x>510</x>
+            <y>341</y>
+            <width>57</width>
+            <height>152</height>
+        </track>
+        
+        <track index="3">
+            <file>lguitar</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Guitar</name>
+            <x>220</x>
+            <y>349</y>
+            <width>57</width>
+            <height>152</height>
+        </track>
+        
+        <track index="4">
+            <file>lperc</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Percussion</name>
+            <x>874</x>
+            <y>263</y>
+            <width>57</width>
+            <height>252</height>
+        </track>
+        
+        <track index="5">
+            <file>lvocalkey</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Vocals</name>
+            <x>624</x>
+            <y>250</y>
+            <width>57</width>
+            <height>252</height>
+        </track>
+        
+    </audio>
+    
+</info>

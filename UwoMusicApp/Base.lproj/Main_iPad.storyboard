@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="1dh-yI-5sc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Store Song Details View Controller-->
+        <scene sceneID="DzG-mO-Fle">
+            <objects>
+                <viewController id="SnH-Hg-1FT" customClass="JDStoreSongDetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OvR-HF-O8W">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0pH-r9-RET">
+                                <rect key="frame" x="20" y="20" width="984" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0QM-iR-8An">
+                                <rect key="frame" x="20" y="49" width="984" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WDE-3h-VM9">
+                                <rect key="frame" x="20" y="78" width="984" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CwE-2W-jDA">
+                                <rect key="frame" x="20" y="107" width="207" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Download">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadButtonClicked:" destination="SnH-Hg-1FT" eventType="touchUpInside" id="hmb-Kb-Gvb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RsJ-Ow-Oe8">
+                                <rect key="frame" x="20" y="184" width="207" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Stream">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="streamButtonClicked:" destination="SnH-Hg-1FT" eventType="touchUpInside" id="VlD-IS-Gj0"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" id="EZQ-dR-Ku0">
+                                <rect key="frame" x="235" y="132" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="color" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="deviceRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xn5-rL-VF9"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="artistLabel" destination="0QM-iR-8An" id="LT0-eV-5IO"/>
+                        <outlet property="downloadButton" destination="CwE-2W-jDA" id="0hV-1Y-7Jv"/>
+                        <outlet property="downloadIndicator" destination="EZQ-dR-Ku0" id="V2r-yc-ab5"/>
+                        <outlet property="genreLabel" destination="WDE-3h-VM9" id="UNk-d4-SDF"/>
+                        <outlet property="titleLabel" destination="0pH-r9-RET" id="stE-sp-cHZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otl-6H-jPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2439" y="53"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="JDViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ljI-51-Dna">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="720"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="EOx-X4-wro" customClass="JDPlaybackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="716"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="baB-no-mz1" userLabel="Musician Info View">
+                                                <rect key="frame" x="13" y="288" width="390" height="739"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="3eG-WQ-eim" userLabel="Musician Text View">
+                                                        <rect key="frame" x="20" y="173" width="350" height="566"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <view contentMode="scaleToFill" id="EBF-ud-HDK" userLabel="Header Bar">
+                                                        <rect key="frame" x="0.0" y="99" width="390" height="66"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musician" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gmz-Fk-z8A" userLabel="Musician Label">
+                                                                <rect key="frame" x="20" y="20" width="350" height="39"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <animations/>
+                                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b0d-Au-Tf8" userLabel="Close Musician Info Button">
+                                                                <rect key="frame" x="328" y="0.0" width="62" height="66"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <animations/>
+                                                                <state key="normal" title="X">
+                                                                    <color key="titleColor" red="0.69803921570000005" green="0.87450980389999999" blue="0.85882352939999995" alpha="1" colorSpace="deviceRGB"/>
+                                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="handleMusicianInfoClose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ru-d3-G34"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <animations/>
+                                                        <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="deviceRGB"/>
+                                                    </view>
+                                                </subviews>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29391163793103448" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                            </scrollView>
+                            <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="veY-Cf-xzu">
+                                <rect key="frame" x="0.0" y="660" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="wuz-gK-pv5">
+                                        <connections>
+                                            <action selector="playButtonPressed:" destination="BYZ-38-t0r" id="y9x-NA-PRm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="pause" id="Sm4-YK-42V">
+                                        <connections>
+                                            <action selector="pauseButtonPressed:" destination="BYZ-38-t0r" id="jip-y8-etW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="oHt-cm-RZh"/>
+                                    <barButtonItem systemItem="stop" id="DPj-OQ-FH8">
+                                        <connections>
+                                            <action selector="stopButtonPressed:" destination="BYZ-38-t0r" id="2zA-4u-FbU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="UA9-Wh-deW"/>
+                                    <barButtonItem style="plain" id="SnO-RO-ko7">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="BNy-fH-lMa">
+                                            <rect key="frame" x="119" y="3.5" width="860" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <connections>
+                                                <action selector="beginSliderChange:" destination="BYZ-38-t0r" eventType="touchDown" id="ViF-7S-9f1"/>
+                                                <action selector="cancelSliderChange:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Ze3-QZ-2nu"/>
+                                                <action selector="endSliderChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRa-nX-kiG"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="compose" id="gSU-Yz-VfA">
+                                        <connections>
+                                            <action selector="showBoundingButtonsClicked:" destination="BYZ-38-t0r" id="zSx-XF-Rd0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.0" green="0.47450980390000003" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fH6-Dd-QDS"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="boundingBoxButton" destination="gSU-Yz-VfA" id="CQ0-2O-aBx"/>
+                        <outlet property="closeMusicianInfoButton" destination="b0d-Au-Tf8" id="2Ja-cx-mKG"/>
+                        <outlet property="mPlaybackView" destination="EOx-X4-wro" id="Qxi-8i-bHN"/>
+                        <outlet property="musicianInfoView" destination="baB-no-mz1" id="bgs-SC-Tqe"/>
+                        <outlet property="musicianLabel" destination="Gmz-Fk-z8A" id="kQR-3n-kfN"/>
+                        <outlet property="musicianText" destination="3eG-WQ-eim" id="GKD-fg-K3l"/>
+                        <outlet property="pauseButton" destination="Sm4-YK-42V" id="7uB-Up-xA7"/>
+                        <outlet property="playButton" destination="wuz-gK-pv5" id="fYe-Aa-wNS"/>
+                        <outlet property="playStopSpacer" destination="oHt-cm-RZh" id="2KT-7b-d2v"/>
+                        <outlet property="scrollView" destination="ljI-51-Dna" id="RKk-GC-6l5"/>
+                        <outlet property="stopButton" destination="DPj-OQ-FH8" id="aWt-Y0-TGR"/>
+                        <outlet property="stopSliderSpacer" destination="UA9-Wh-deW" id="pIP-Sj-EOm"/>
+                        <outlet property="timeSlider" destination="BNy-fH-lMa" id="lrs-7n-a6t"/>
+                        <outlet property="timeSliderBarItem" destination="SnO-RO-ko7" id="8J7-IS-ehj"/>
+                        <outlet property="toolBar" destination="veY-Cf-xzu" id="zC8-aY-BGU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="1154"/>
+        </scene>
+        <!--Store View Controller-->
+        <scene sceneID="tmG-LF-XMD">
+            <objects>
+                <viewController id="WiT-jr-Vc0" customClass="JDStoreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AJQ-H7-ZGk">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search by Title, Artist, or Genre" id="RzZ-40-gsy">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="WiT-jr-Vc0" id="LVd-ZC-UgW"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tca-nY-ku6">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="660"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WiT-jr-Vc0" id="noH-nP-DN0"/>
+                                    <outlet property="delegate" destination="WiT-jr-Vc0" id="wvZ-Al-mZS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YHL-gk-SAF"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="searchTableView" destination="tca-nY-ku6" id="kzg-PE-6vy"/>
+                        <segue destination="SnH-Hg-1FT" kind="push" identifier="songDetailsPush" id="5xj-Rh-w9O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Csk-cU-6Vl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="53"/>
+        </scene>
+        <!--Song Picker View Controller-->
+        <scene sceneID="pcz-AO-7t9">
+            <objects>
+                <viewController id="ff6-sk-4iI" customClass="JDSongPickerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eHQ-SG-ZrE">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheetmusic.jpg" id="QpI-Rr-dig" userLabel="Background Sheet Music">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <view alpha="0.69999999999999973" contentMode="scaleToFill" id="0uI-vG-Iqc" userLabel="Sheet Music Tinter">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="5Hu-Wj-lED" userLabel="Main Menu">
+                                <rect key="frame" x="34" y="20" width="955" height="643"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="5GE-sd-8jl" userLabel="Main Menu Content">
+                                        <rect key="frame" x="0.0" y="148" width="955" height="559"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="News loading..." selectable="NO" id="wxn-Eh-iR4">
+                                                <rect key="frame" x="20" y="20" width="555" height="519"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES" address="YES"/>
+                                            </textView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="CaH-QS-VAi">
+                                                <rect key="frame" x="583" y="0.0" width="372" height="559"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <color key="separatorColor" red="0.69803921570000005" green="0.87450980389999999" blue="0.85882352939999995" alpha="1" colorSpace="deviceRGB"/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="ff6-sk-4iI" id="xaj-OT-8jU"/>
+                                                    <outlet property="delegate" destination="ff6-sk-4iI" id="EtE-Tf-qyT"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="gLk-IP-zR3" userLabel="Dark Menu Bar">
+                                        <rect key="frame" x="0.0" y="0.0" width="955" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musical Chairs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jh0-B1-RWN">
+                                        <rect key="frame" x="20" y="38" width="398" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="56"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Songs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="04D-Ah-c3z">
+                                        <rect key="frame" x="584" y="113" width="371" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.69803921568627447" green="0.87450980392156863" blue="0.85882352941176465" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6g1-jb-mlj">
+                                        <rect key="frame" x="20" y="113" width="371" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.69803921570000005" green="0.87450980389999999" blue="0.85882352939999995" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WR1-7A-vb7"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="mainMenuView" destination="5Hu-Wj-lED" id="bQE-hz-AXh"/>
+                        <outlet property="navController" destination="WR1-7A-vb7" id="Kwg-8I-HCC"/>
+                        <outlet property="newsTextView" destination="wxn-Eh-iR4" id="fuK-Zu-MiA"/>
+                        <outlet property="songPickerTable" destination="CaH-QS-VAi" id="8Y3-0H-f6e"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="songPush" id="TXh-yS-YZO"/>
+                        <segue destination="WiT-jr-Vc0" kind="push" identifier="storePush" id="vgI-US-3ZX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="In1-ml-SlE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="58"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X3I-CY-Owx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1dh-yI-5sc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="oHV-PU-fHS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CSI-Gu-tbJ">
+                        <rect key="frame" x="0.0" y="724" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="ff6-sk-4iI" kind="relationship" relationship="rootViewController" id="R5t-71-gi1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzw-7C-Sau" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1600" y="58"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K30-w2-Wz3">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="HsJ-3a-QdF" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SPo-sF-PNk">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXF-0U-Ql6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="1292"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sheetmusic.jpg" width="3000" height="1996"/>
+    </resources>
+</document>

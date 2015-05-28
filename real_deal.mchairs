@@ -1,0 +1,85 @@
+<info>
+    
+    <title>Musical Futures</title>
+    <artist>Real Deal</artist>
+    <genre>Rock</genre>
+    
+    <video>
+        <file>real_deal</file>
+        <extension>mov</extension>
+        <start_time>0</start_time>
+    </video>
+    
+    <audio>
+        <offset>800</offset>
+        <track_count>6</track_count>
+        
+        <track index="0">
+            <file>rdbass</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Bass</name>
+            <x>271</x>
+            <y>343</y>
+            <width>57</width>
+            <height>152</height>
+        </track>
+        
+        <track index="1">
+            <file>rddrums</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Drums</name>
+            <x>531</x>
+            <y>358</y>
+            <width>57</width>
+            <height>152</height>
+        </track>
+        
+        <track index="2">
+            <file>rdguitarFL</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Guitar (Back)</name>
+            <x>161</x>
+            <y>350</y>
+            <width>57</width>
+            <height>152</height>
+        </track>
+        
+        <track index="3">
+            <file>rdguitarblack</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Guitar (FL)</name>
+            <x>373</x>
+            <y>254</y>
+            <width>107</width>
+            <height>252</height>
+        </track>
+        
+        <track index="4">
+            <file>rdguitarsinger</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Singer Guitar</name>
+            <x>647</x>
+            <y>277</y>
+            <width>57</width>
+            <height>270</height>
+        </track>
+        
+        <track index="5">
+            <file>rdvocal</file>
+            <extension>wav</extension>
+            <trackoffset>0</trackoffset>
+            <name>Vocals</name>
+            <x>647</x>
+            <y>277</y>
+            <width>57</width>
+            <height>270</height>
+        </track>
+        
+    </audio>
+    
+</info>
