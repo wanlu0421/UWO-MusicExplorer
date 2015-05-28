@@ -36,7 +36,6 @@
                           success(news);
                       }
                       failure:^(RKObjectRequestOperation* operation, NSError* error){
-                          NSLog(@"ERROR : %@", error);
                           failure(error);
                       }];
 }

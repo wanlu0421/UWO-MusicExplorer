@@ -182,7 +182,7 @@
 
 -(void)roundButtonDidTap:(UIButton*)tappedButton{
     
-    [self performSegueWithIdentifier:@"storePush" sender:nil];
+//    [self performSegueWithIdentifier:@"storePush" sender:nil];
 }
 
 

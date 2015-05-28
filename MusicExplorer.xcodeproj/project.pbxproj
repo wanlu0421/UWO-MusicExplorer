@@ -381,7 +381,7 @@
 				ORGANIZATIONNAME = "Western University";
 				TargetAttributes = {
 					D0777231192ACD6100F9993A = {
-						DevelopmentTeam = 9LBD7R3S9M;
+						DevelopmentTeam = 6EDY536PS5;
 					};
 				};
 			};
