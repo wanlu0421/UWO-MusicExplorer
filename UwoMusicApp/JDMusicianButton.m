@@ -105,7 +105,10 @@
         NSLog(@"Long pressed");
         [[JDStatisticsLogger loggerInstance] logMusicianInfoOpenedForMusician:mAudioTrackInfo.name];
         mInfoLabel.text = mAudioTrackInfo.name;
-        mInfoText.text = mAudioTrackInfo.description;
+        
+        if(mAudioTrackInfo.description == nil){mInfoText.text = @"this is a text\n \n this will going to show the information of the musician \n\n name \n\n\n instrument \n\n\n\ngom this is a text\n\n\n\nthis is a long long long text and alsidnflasi flasidfliajl flsidjfwie lsdnie lsidnfl asindfl di\n...nfiw infsildf diiisa flisdf sdnfia fijef dn fidjf sndi fuf dfishf \n\n\n\n\n\n\n... sdnf siduf asnidif sud nfishdif uwif disjd fisju f dnf isjdifudu fdisa ue fjdfi %d %13 #13    %s                      000000000000000000000000oooooooooookkkkkkkkk\n\n\n\n\n\nn\n\n\n\n\nkkkkkkkkdkaf asjdkljflaksdjfiajidf alskdjaf alsdkjf adifl ajkdfliwej flwijefwefe\n\n\n\n\nw efwe fw ef ew f jsaidjfl iansdncaislvisaijfld %s @asjlfijilajfndalfiewjflisanflidalfjwlif ljs\n\n\n\ndifj diajflsdifansifhwlifbsdi\n\n\n\nahfigsajfl dsjf iasfhliafn ds ifalfjdliaahfdliflaihsf dslaijfd nfia fdilfja fdhiflwlhiehf liajdifhliafl d ";}
+        else {mInfoText.text = mAudioTrackInfo.description;}
+        
         [mJDViewController handleMusicianLongPress];
     }
 }
