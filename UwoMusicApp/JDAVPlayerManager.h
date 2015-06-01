@@ -32,6 +32,8 @@
     double mInterval;
     
     id mTimeObserver;
+    
+    UILabel* mTimeLabel;
 
 }
 
@@ -52,7 +54,7 @@
 -(void)pause;
 -(void)stop;
 
--(void)registerTimeSlider:(UISlider*)slider;
+-(void)registerTimeSlider:(UISlider*)slider timelabel:(UILabel*)label;
 -(void)unregisterTimeSlider;
 -(void)syncSlider;
 

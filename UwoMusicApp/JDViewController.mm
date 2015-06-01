@@ -256,11 +256,6 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     
     toolBar.items = items;
     
-    NSString *str1;
-    int timenum1 = [mAvPlayerManager durationInSeconds] / 60;
-    int timenum2 = int([mAvPlayerManager durationInSeconds]) % 60;
-    str1 = [NSString stringWithFormat:@"00:00/%d:%d",timenum1,timenum2];
-    timelabel.text = str1;
 }
 
 - (IBAction)pauseButtonPressed:(id)sender {
@@ -314,7 +309,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
                 timeSlider.enabled = YES;
             
                 if(!slider_is_registered) {
-                    [mAvPlayerManager registerTimeSlider:timeSlider];
+                    [mAvPlayerManager registerTimeSlider:timeSlider timelabel:timelabel];
                     slider_is_registered = true;
                 }
             } else if (playerItem.status == AVPlayerStatusFailed) {
@@ -331,7 +326,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     timeSlider.enabled = YES;
     
     if(!slider_is_registered) {
-        [mAvPlayerManager registerTimeSlider:timeSlider];
+        [mAvPlayerManager registerTimeSlider:timeSlider timelabel:timelabel];
         slider_is_registered = true;
     }
 
@@ -347,7 +342,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
 - (IBAction)endSliderChange:(id)sender {
     Float64 newTime = [mAvPlayerManager durationInSeconds] * timeSlider.value;
     [mAvPlayerManager seekToTimeSeconds:newTime];
-    [mAvPlayerManager registerTimeSlider:timeSlider];
+    [mAvPlayerManager registerTimeSlider:timeSlider timelabel:timelabel];
     slider_is_registered = true;
     [[JDStatisticsLogger loggerInstance]
      logVideoTimelineSeekStartTime:[NSString stringWithFormat:@"%lf",oldTime]
@@ -355,7 +350,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
 }
 
 - (IBAction)cancelSliderChange:(id)sender {
-    [mAvPlayerManager registerTimeSlider:timeSlider];
+    [mAvPlayerManager registerTimeSlider:timeSlider timelabel:timelabel];
     slider_is_registered = true;
 }
 

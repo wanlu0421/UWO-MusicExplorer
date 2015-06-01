@@ -92,14 +92,14 @@ static const NSString *ItemTracksContext = @"ITEMTRACKSCONTEXT";
     return;
 }
 
--(void) syncUi {
+/*-(void) syncUi {
     // TODO Sync play button here
     if((self.mPlayer.currentItem != nil) && ([self.mPlayer.currentItem status] == AVPlayerItemStatusReadyToPlay)) {
         // TODO Enable play button
     } else {
         // TODO Disable play button
     }
-}
+} */
 
 -(void)addAudioTrack:(AVPlayerItemTrack*)audioTrack Key:(NSString*)key TrackId:(CMPersistentTrackID) trackId {
     if(mAudioTracks == NULL)
@@ -179,8 +179,9 @@ static const NSString *ItemTracksContext = @"ITEMTRACKSCONTEXT";
     [self.mPlayer seekToTime:CMTimeMake(0, 1)];
 }
 
--(void)registerTimeSlider:(UISlider *)slider {
+-(void)registerTimeSlider:(UISlider *)slider timelabel:(UILabel*)label{
     mTimeSlider = slider;
+    mTimeLabel = label;
     CMTime playerDuration = [self playerItemDuration];
     if(CMTIME_IS_INVALID(playerDuration))
         return;
@@ -233,7 +234,14 @@ static const NSString *ItemTracksContext = @"ITEMTRACKSCONTEXT";
         float maxVal = [mTimeSlider maximumValue];
         double time = CMTimeGetSeconds([self.mPlayer currentTime]);
         [mTimeSlider setValue:(maxVal - minVal) * time / duration + minVal];
-    }
+        }
+    NSString *str1;
+    int timenum1 = [self durationInSeconds] / 60;
+    int timenum2 = (int)[self durationInSeconds] % 60;
+    int num1 = [self timeInSeconds] / 60;
+    int num2 = (int)[self timeInSeconds] % 60;
+    str1 = [NSString stringWithFormat:@"%02d:%02d/%02d:%02d",num1,num2,timenum1,timenum2];
+    mTimeLabel.text = str1;
 }
 
 -(void)seekToTimeSeconds:(Float64)seconds {
@@ -242,6 +250,10 @@ static const NSString *ItemTracksContext = @"ITEMTRACKSCONTEXT";
 
 -(Float64)durationInSeconds {
     return CMTimeGetSeconds([self.mPlayerItem duration]);
+}
+
+-(Float64)timeInSeconds{
+    return CMTimeGetSeconds([self.playerItem currentTime]);
 }
 
 -(void)toggleMute:(NSString *)musician  {
