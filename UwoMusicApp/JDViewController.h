@@ -39,11 +39,11 @@
     IBOutlet UIBarButtonItem *stopSliderSpacer;
     IBOutlet UIBarButtonItem *timeSliderBarItem;
     IBOutlet UISlider *timeSlider;
-    IBOutlet UIBarButtonItem *boundingBoxButton;
     IBOutlet UIView *musicianInfoView;
     IBOutlet UITextView *musicianText;
     IBOutlet UILabel *musicianLabel;
     IBOutlet UIButton *closeMusicianInfoButton;
+    IBOutlet UILabel *timelabel;
     
     CGRect beforeScroll;
     Float64 oldTime;
@@ -63,7 +63,7 @@
     bool should_resume_on_play;
     bool songs_hidden;
     NSURL* song_selection;
-    bool bounding_boxes_visible;
+
     bool musician_info_open;
     
     

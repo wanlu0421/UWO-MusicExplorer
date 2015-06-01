@@ -172,7 +172,7 @@
                                     <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="UA9-Wh-deW"/>
                                     <barButtonItem style="plain" id="SnO-RO-ko7">
                                         <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="BNy-fH-lMa">
-                                            <rect key="frame" x="119" y="3.5" width="860" height="37"/>
+                                            <rect key="frame" x="119" y="3.5" width="839" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <connections>
@@ -182,15 +182,18 @@
                                             </connections>
                                         </slider>
                                     </barButtonItem>
-                                    <barButtonItem systemItem="compose" id="gSU-Yz-VfA">
-                                        <connections>
-                                            <action selector="showBoundingButtonsClicked:" destination="BYZ-38-t0r" id="zSx-XF-Rd0"/>
-                                        </connections>
-                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" red="0.0" green="0.47450980390000003" blue="0.41960784309999999" alpha="1" colorSpace="deviceRGB"/>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00/00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IrE-45-QEk">
+                                <rect key="frame" x="946" y="669" width="86" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,7 +201,6 @@
                     <navigationItem key="navigationItem" id="fH6-Dd-QDS"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="boundingBoxButton" destination="gSU-Yz-VfA" id="CQ0-2O-aBx"/>
                         <outlet property="closeMusicianInfoButton" destination="b0d-Au-Tf8" id="2Ja-cx-mKG"/>
                         <outlet property="mPlaybackView" destination="EOx-X4-wro" id="Qxi-8i-bHN"/>
                         <outlet property="musicianInfoView" destination="baB-no-mz1" id="bgs-SC-Tqe"/>
@@ -212,6 +214,7 @@
                         <outlet property="stopSliderSpacer" destination="UA9-Wh-deW" id="pIP-Sj-EOm"/>
                         <outlet property="timeSlider" destination="BNy-fH-lMa" id="lrs-7n-a6t"/>
                         <outlet property="timeSliderBarItem" destination="SnO-RO-ko7" id="8J7-IS-ehj"/>
+                        <outlet property="timelabel" destination="IrE-45-QEk" id="I7q-C0-F0l"/>
                         <outlet property="toolBar" destination="veY-Cf-xzu" id="zC8-aY-BGU"/>
                     </connections>
                 </viewController>

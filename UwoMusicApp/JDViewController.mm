@@ -31,7 +31,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     //song_selection = @"legacy";
     video_is_playing = false;
     slider_is_registered = false;
-    bounding_boxes_visible = false;
+
     musician_info_open = false;
 
     [self setUpView];
@@ -75,7 +75,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     [items addObject:stopButton];
     [items addObject:stopSliderSpacer];
     [items addObject:timeSliderBarItem];
-    [items addObject:boundingBoxButton];
+
     
     toolBar.items = items;
     
@@ -222,8 +222,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     
     NSMutableArray* newVolumes = [[NSMutableArray alloc] init];
     // Find the instruments that intersect the current view.
-    // The volume is adjusted to the percentage of their bounding box is in the
-    // current view.
+
     for (int i = 0; i < [musicians count]; i++) {
         UIButton *button = (UIButton*)musicians[i];
         bool intersects = CGRectIntersectsRect(currentView, button.frame);
@@ -253,9 +252,15 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     [items addObject:stopButton];
     [items addObject:stopSliderSpacer];
     [items addObject:timeSliderBarItem];
-    [items addObject:boundingBoxButton];
+
     
     toolBar.items = items;
+    
+    NSString *str1;
+    int timenum1 = [mAvPlayerManager durationInSeconds] / 60;
+    int timenum2 = int([mAvPlayerManager durationInSeconds]) % 60;
+    str1 = [NSString stringWithFormat:@"00:00/%d:%d",timenum1,timenum2];
+    timelabel.text = str1;
 }
 
 - (IBAction)pauseButtonPressed:(id)sender {
@@ -269,7 +274,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     [items addObject:stopButton];
     [items addObject:stopSliderSpacer];
     [items addObject:timeSliderBarItem];
-    [items addObject:boundingBoxButton];
+
     
     toolBar.items = items;
 }
@@ -284,7 +289,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     [items addObject:stopButton];
     [items addObject:stopSliderSpacer];
     [items addObject:timeSliderBarItem];
-    [items addObject:boundingBoxButton];
+
     
     toolBar.items = items;
 }
@@ -354,18 +359,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     slider_is_registered = true;
 }
 
-- (IBAction)showBoundingButtonsClicked:(id)sender {
-    if(bounding_boxes_visible) {
-        bounding_boxes_visible = false;
-        for(JDMusicianButton* button in musicians)
-            [button setBackgroundColor:[UIColor clearColor]];
-    } else {
-        bounding_boxes_visible = true;
-        for(JDMusicianButton* button in musicians)
-            [button setBackgroundColor:[UIColor blueColor]];
-    }
-    
-}
+
 
 -(void) viewWillDisappear:(BOOL)animated {
 //    if([self.navigationController.viewControllers indexOfObject:self] == NSNotFound) {
