@@ -44,6 +44,7 @@
     IBOutlet UILabel *musicianLabel;
     IBOutlet UIButton *closeMusicianInfoButton;
     IBOutlet UILabel *timelabel;
+    IBOutlet UILabel *songinfolabel;
     
     CGRect beforeScroll;
     Float64 oldTime;

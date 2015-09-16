@@ -66,6 +66,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
 }
 
 -(void)setUpView {
+   
     
     [self parseXMLData:song_selection];
     [self setUpAVManager];
@@ -88,7 +89,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     musicians = [self createMusicianButtons];
     musicianNames = [[NSMutableArray alloc] init];
     
-    
+    songinfolabel.text = [NSString stringWithFormat:@"%@ - %@", xmlParser.artist, xmlParser.title];
     
     // Add all musician buttons to the screen
     for (JDMusicianButton* button in musicians) {

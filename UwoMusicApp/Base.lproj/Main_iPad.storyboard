@@ -96,6 +96,16 @@
                                     <view contentMode="scaleToFill" id="EOx-X4-wro" customClass="JDPlaybackView">
                                         <rect key="frame" x="0.0" y="-10" width="1024" height="716"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uIP-BP-L74" userLabel="Song Info Label">
+                                                <rect key="frame" x="8" y="644" width="111" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -198,7 +208,11 @@
                         <animations/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fH6-Dd-QDS"/>
+                    <navigationItem key="navigationItem" id="fH6-Dd-QDS">
+                        <connections>
+                            <outlet property="titleView" destination="uIP-BP-L74" id="RyF-L6-6Iw"/>
+                        </connections>
+                    </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="closeMusicianInfoButton" destination="b0d-Au-Tf8" id="2Ja-cx-mKG"/>
@@ -210,6 +224,7 @@
                         <outlet property="playButton" destination="wuz-gK-pv5" id="fYe-Aa-wNS"/>
                         <outlet property="playStopSpacer" destination="oHt-cm-RZh" id="2KT-7b-d2v"/>
                         <outlet property="scrollView" destination="ljI-51-Dna" id="RKk-GC-6l5"/>
+                        <outlet property="songinfolabel" destination="uIP-BP-L74" id="Zoi-nS-9iz"/>
                         <outlet property="stopButton" destination="DPj-OQ-FH8" id="aWt-Y0-TGR"/>
                         <outlet property="stopSliderSpacer" destination="UA9-Wh-deW" id="pIP-Sj-EOm"/>
                         <outlet property="timeSlider" destination="BNy-fH-lMa" id="lrs-7n-a6t"/>
