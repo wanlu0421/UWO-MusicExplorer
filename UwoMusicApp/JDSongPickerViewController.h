@@ -18,9 +18,9 @@
     
 }
 @property (weak, nonatomic) IBOutlet UINavigationItem *navController;
-@property (weak, nonatomic) IBOutlet UIButton *storeButton;
+//@property (weak, nonatomic) IBOutlet UIButton *storeButton;
 @property (weak, nonatomic) IBOutlet UIView *mainMenuView;
-@property (strong, nonatomic) IBOutlet UITextView *newsTextView;
+//@property (strong, nonatomic) IBOutlet UITextView *newsTextView;
 
 -(NSArray*)getSongsToChooseFrom;
 

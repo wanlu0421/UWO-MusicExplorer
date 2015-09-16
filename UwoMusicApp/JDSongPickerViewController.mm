@@ -9,12 +9,12 @@
 #import "JDSongPickerViewController.h"
 #import "JDSongSelectionTableViewCell.h"
 #import "JDViewController.h"
-#import "JDNewsRestModel.h"
+//#import "JDNewsRestModel.h"
 #import "JDSongDescriptorRestModel.h"
 #import <RestKit/RestKit.h>
 #import "JDOauth2TokenResponse.h"
 
-#define STORE_BUTTON_DIAMETER 75
+//#define STORE_BUTTON_DIAMETER 75
 
 
 @implementation JDSongPickerViewController
@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     // Get the latest news
-    [JDNewsRestModel latestNewsArticleSuccess:
+/*    [JDNewsRestModel latestNewsArticleSuccess:
      ^(JDNewsRestModel* news){
          // Load the latest news into the news view
          NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
@@ -42,10 +42,10 @@
      ^(NSError* error){
         _newsTextView.text = @"Could not connect to the news... Sorry!";
     }];
-    
+ */
     // This will be an array of NSString*
     songsToChooseFrom = [self findMchairsFiles];
-    [self setUpRoundedStoreButton];
+//    [self setUpRoundedStoreButton];
     
     // Set navigation bar color
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:0.475 blue:0.42 alpha:1];
@@ -164,7 +164,7 @@
     [self performSegueWithIdentifier:@"songPush" sender:nil];
 }
 
-- (void)setUpRoundedStoreButton
+/*- (void)setUpRoundedStoreButton
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(820, 100, STORE_BUTTON_DIAMETER, STORE_BUTTON_DIAMETER);
@@ -184,6 +184,6 @@
     
 //    [self performSegueWithIdentifier:@"storePush" sender:nil];
 }
-
+*/
 
 @end

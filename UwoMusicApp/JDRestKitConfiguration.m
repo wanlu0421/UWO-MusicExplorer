@@ -9,7 +9,7 @@
 #import "JDRestKitConfiguration.h"
 #import <RestKit/RestKit.h>
 #import <ISO8601DateFormatterValueTransformer/RKISO8601DateFormatter.h>
-#import "JDNewsRestModel.h"
+//#import "JDNewsRestModel.h"
 #import "JDSongDescriptorRestModel.h"
 #import "JDOauth2TokenResponse.h"
 
@@ -52,13 +52,13 @@
                                                      statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)],
              
              // Latest news on success
-             [RKResponseDescriptor
+/*             [RKResponseDescriptor
               responseDescriptorWithMapping:[JDNewsRestModel getObjectMapping]
               method:RKRequestMethodGET
               pathPattern:@"/api/news/latest"
               keyPath:nil
               statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)],
-             
+*/             
              // All songs on success
              [RKResponseDescriptor responseDescriptorWithMapping:[JDSongDescriptorRestModel getObjectMapping]
                                                           method:RKRequestMethodGET
