@@ -48,7 +48,7 @@
 //    [self setUpRoundedStoreButton];
     
     // Set navigation bar color
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:0.475 blue:0.42 alpha:1];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.25 green:0 blue:0.5 alpha:1];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
     [super viewDidLoad];
