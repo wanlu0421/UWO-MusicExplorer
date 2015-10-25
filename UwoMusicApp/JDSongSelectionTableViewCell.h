@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JDVideoTrackInfo.h"
 
 @interface JDSongSelectionTableViewCell : UITableViewCell
 {
     NSURL* fileUrl;
+   
 }
 
 - (id)initWithFileUrl:(NSURL*)url stlye:(UITableViewCellStyle)style reuseIdentifier:(NSString*)reuseIdentifier;

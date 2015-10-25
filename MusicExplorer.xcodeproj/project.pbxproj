@@ -54,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09009F481C140EA5007E5857 /* legacy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = legacy.mp4; sourceTree = "<group>"; };
 		0949FC421A95944000C624DD /* JDNewsRestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNewsRestModel.h; sourceTree = "<group>"; };
 		0949FC431A95944000C624DD /* JDNewsRestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNewsRestModel.m; sourceTree = "<group>"; };
 		0949FC4A1A9667D200C624DD /* JDRestKitConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRestKitConfiguration.h; sourceTree = "<group>"; };
@@ -223,6 +224,7 @@
 		D068F03F1957924B003D2D27 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				09009F481C140EA5007E5857 /* legacy.mp4 */,
 				096C70BC1AA94265009EBB71 /* entities.strings */,
 				09F16DA21A672CF400AA7B5C /* sheetmusic.jpg */,
 				095B201819E36D58004BB1D9 /* mute_icon.gif */,
