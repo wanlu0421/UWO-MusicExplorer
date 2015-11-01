@@ -15,6 +15,15 @@
     NSArray* songsToChooseFrom;
     NSURL* songFileChoice;
     IBOutlet UITableView *songPickerTable;
+    IBOutlet UIButton *howtouse;
+    IBOutlet UIButton *addnewsongs;
+    IBOutlet UIButton *aboutus;
+    IBOutlet UIView *instruction;
+    IBOutlet UIButton *gotit;
+    IBOutlet UITextView *instructiontext;
+    IBOutlet UILabel *instuctiontitle;
+    
+    bool instruction_info_open;
     
 }
 @property (weak, nonatomic) IBOutlet UINavigationItem *navController;

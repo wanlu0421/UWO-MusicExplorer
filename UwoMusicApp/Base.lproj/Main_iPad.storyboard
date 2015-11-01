@@ -208,6 +208,88 @@
                                                 <color key="textColor" red="0.23921568630000001" green="0.08235294118" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mmG-D6-D4l">
+                                                <rect key="frame" x="13" y="6" width="371" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.23921568630000001" green="0.08235294118" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SxF-U7-a6J">
+                                                <rect key="frame" x="96" y="72" width="173" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="How to use" backgroundImage="buttonicon.png"/>
+                                                <connections>
+                                                    <action selector="howtousebuttonpressed:" destination="ff6-sk-4iI" eventType="touchUpInside" id="nbm-iY-jWT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ilV-sF-C8a">
+                                                <rect key="frame" x="96" y="271" width="173" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="About Us" backgroundImage="buttonicon.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tH1-mn-FHs">
+                                                <rect key="frame" x="96" y="171" width="173" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Add New Songs" backgroundImage="buttonicon.png"/>
+                                            </button>
+                                            <view contentMode="scaleToFill" id="bjB-dj-ki8" userLabel="Instruction Info View" propertyAccessControl="none">
+                                                <rect key="frame" x="0.0" y="631" width="365" height="631"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" id="XTA-pa-auM" userLabel="Instruction Text View" colorLabel="IBBuiltInLabel-Yellow">
+                                                        <rect key="frame" x="8" y="65" width="350" height="493"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment>
+                                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                <attributes>
+                                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <view contentMode="scaleToFill" id="7cV-rF-rzn" userLabel="Header Bar">
+                                                        <rect key="frame" x="0.0" y="0.0" width="365" height="66"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ATe-dK-YzM" userLabel="Title Label">
+                                                                <rect key="frame" x="48" y="13" width="269" height="39"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <animations/>
+                                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <animations/>
+                                                        <color key="backgroundColor" red="0.23921568630000001" green="0.08235294118" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="tintColor" red="0.23921568630000001" green="0.08235294118" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ac6-h3-zOV">
+                                                        <rect key="frame" x="96" y="427" width="173" height="62"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <animations/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="Got It !" backgroundImage="buttonicon.png"/>
+                                                        <connections>
+                                                            <action selector="gotitbuttonpressed:" destination="ff6-sk-4iI" eventType="touchUpInside" id="rtw-ba-jRL"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                            </view>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -246,6 +328,13 @@
                     <navigationItem key="navigationItem" id="WR1-7A-vb7"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="aboutus" destination="ilV-sF-C8a" id="6xR-l4-RUM"/>
+                        <outlet property="addnewsongs" destination="tH1-mn-FHs" id="5N8-LV-sZt"/>
+                        <outlet property="gotit" destination="Ac6-h3-zOV" id="ePy-mn-kcA"/>
+                        <outlet property="howtouse" destination="SxF-U7-a6J" id="9CJ-OP-ddF"/>
+                        <outlet property="instruction" destination="bjB-dj-ki8" id="Rd0-bX-hJ3"/>
+                        <outlet property="instructiontext" destination="XTA-pa-auM" id="oVO-Hw-BRJ"/>
+                        <outlet property="instuctiontitle" destination="ATe-dK-YzM" id="Ggm-hS-s1f"/>
                         <outlet property="mainMenuView" destination="5Hu-Wj-lED" id="bQE-hz-AXh"/>
                         <outlet property="navController" destination="WR1-7A-vb7" id="Kwg-8I-HCC"/>
                         <outlet property="songPickerTable" destination="CaH-QS-VAi" id="8Y3-0H-f6e"/>
@@ -300,6 +389,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="buttonicon.png" width="900" height="430"/>
         <image name="music1.png" width="900" height="477"/>
         <image name="sheetmusic.jpg" width="3000" height="1996"/>
         <image name="stop.png" width="20" height="20"/>
