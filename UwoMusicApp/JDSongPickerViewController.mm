@@ -174,9 +174,39 @@
             instruction.frame = CGRectMake(instruction.frame.origin.x,
                                                 instruction.frame.origin.y - instruction.frame.size.height, instruction.frame.size.width, instruction.frame.size.height);
             instruction_info_open = true;
+            instuctiontitle.text = @"How To Use";
+            instructiontext.text = @"Welcome to our Music Explorer App!\nThis App can be used for music instruments study.\nFirst, select a song from the right table sight to play it.\nWhile playing, you can zoom in and zoom out using the gesture.\nTo see the detailed information of musician, long press the musician.\nYou can also double tap one or more musician to mute them.\n\nNow, enjoy the music!";
         }
     }];
 }
+
+- (IBAction)addnewsongsbuttonpressed:(id)sender {
+    NSLog(@"Add new songs button pressed");
+    [UIView animateWithDuration:0.2 animations:^{
+        if(!instruction_info_open) {
+            instruction.frame = CGRectMake(instruction.frame.origin.x,
+                                           instruction.frame.origin.y - instruction.frame.size.height, instruction.frame.size.width, instruction.frame.size.height);
+            instruction_info_open = true;
+            instuctiontitle.text = @"Add New Songs";
+            instructiontext.text = @"Welcome to our Music Explorer App!\nThis App can be used for music instruments study.\nFirst, select a song from the right table sight to play it.\nWhile playing, you can zoom in and zoom out using the gesture.\nTo see the detailed information of musician, long press the musician.\nYou can also double tap one or more musician to mute them.\n\nNow, enjoy the music!";
+        }
+    }];
+}
+
+- (IBAction)aboutusbuttonpressed:(id)sender {
+    NSLog(@"About us button pressed");
+    [UIView animateWithDuration:0.2 animations:^{
+        if(!instruction_info_open) {
+            instruction.frame = CGRectMake(instruction.frame.origin.x,
+                                           instruction.frame.origin.y - instruction.frame.size.height, instruction.frame.size.width, instruction.frame.size.height);
+            instruction_info_open = true;
+            instuctiontitle.text = @"About Us";
+            instructiontext.text = @"Welcome to our Music Explorer App!\nThis App can be used for music instruments study.\nFirst, select a song from the right table sight to play it.\nWhile playing, you can zoom in and zoom out using the gesture.\nTo see the detailed information of musician, long press the musician.\nYou can also double tap one or more musician to mute them.\n\nNow, enjoy the music!";
+        }
+    }];
+}
+
+
 - (IBAction)gotitbuttonpressed:(id)sender {
     [UIView animateWithDuration:0.2 animations:^{
         if(instruction_info_open) {
