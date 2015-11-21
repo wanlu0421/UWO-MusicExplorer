@@ -65,7 +65,7 @@
     // 构造图片
     UIImage *image = [UIImage imageWithCGImage: img];
      if(error){
-         NSLog(@"截取视频缩略图时发生错误，错误信息：%@",error.localizedDescription);
+         NSLog(@"There exist an error when trying to get the image：%@",error.localizedDescription);
      }
     return image;
 }
@@ -87,13 +87,11 @@
         return;
     }
     NSURL* videoURl = [[[self getUrl] URLByDeletingLastPathComponent] URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.%@",xmlParser.videoTrackInfo.file, xmlParser.videoTrackInfo.extension]];
-    self.textLabel.text = [NSString stringWithFormat:@"%@ - %@", xmlParser.artist, xmlParser.title];
-//    NSLog([NSString stringWithFormat:@"%@ ", videoURl]);
-//    NSLog([NSString stringWithFormat:@"%@ ", [self getUrl]]);
-/*    NSURL* url = [[NSBundle mainBundle] URLForResource:@"mute_icon" withExtension:@"gif"];
-    NSData* imgData = [NSData dataWithContentsOfURL:url];
-    UIImage* muteImage = [UIImage imageWithData:imgData];
-    self.imageView.image = muteImage;*/
+
+    self.textLabel.text = [NSString stringWithFormat:@"%@", xmlParser.title];
+
+    self.detailTextLabel.text = [NSString stringWithFormat:@"Performer: %@   Genre: %@", xmlParser.artist, xmlParser.genre ];
+
     UIImage *image = [self imageWithMediaURL:videoURl];
     self.imageView.image = image;
     

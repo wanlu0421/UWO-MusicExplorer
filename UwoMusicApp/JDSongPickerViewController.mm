@@ -156,7 +156,7 @@
     
         cell = [[JDSongSelectionTableViewCell alloc]
                 initWithFileUrl:[NSURL URLWithString:[songsToChooseFrom objectAtIndex:indexPath.row]]
-                stlye:UITableViewCellStyleDefault
+                stlye:UITableViewCellStyleSubtitle
                 reuseIdentifier:simpleTableIdentifier];
     return cell;
 }
@@ -175,7 +175,8 @@
                                                 instruction.frame.origin.y - instruction.frame.size.height, instruction.frame.size.width, instruction.frame.size.height);
             instruction_info_open = true;
             instuctiontitle.text = @"How To Use";
-            instructiontext.text = @"\nWelcome to our Music Chairs App!\n\n\nThis app can be used for music instruments study.\n\nFirst, select a song from the right table sight to play it.\n\nWhile playing, you can zoom in and zoom out using two finger gesture.\n\nTo see the detailed information of musician, please long press the musician.\n\nYou can also double tap one or more musician to mute them.\n\n\nNow, enjoy the music!";
+            instructiontext.text = @"\nWelcome to our Music Chairs App!\n\nThis app can be used for music performance study.\n\nTo start, select a song from the right table sight to play it.\nWhile playing, you can zoom in and zoom out using two finger gesture.\nTo see the detailed information of musician, please long press (press and hold) the musician.\nYou can also double tap one or more musician to mute them or release mute.\n\nNow, enjoy the music!";
+            instructiontext.font = [UIFont boldSystemFontOfSize:15];
         }
     }];
 }
@@ -189,6 +190,7 @@
             instruction_info_open = true;
             instuctiontitle.text = @"Add New Songs";
             instructiontext.text = @"\nTo add a new song, you should have the song file ready on your comupter first, and then connect your device to your computer through iTunes. After that, go to the section for iTunes File Sharing with apps, find out the Music Charis app. You should then be able to sync all of the song file you want to this app.\n\nHope you enjoy the music!";
+            instructiontext.font = [UIFont boldSystemFontOfSize:15];
         }
     }];
 }
@@ -201,7 +203,8 @@
                                            instruction.frame.origin.y - instruction.frame.size.height, instruction.frame.size.width, instruction.frame.size.height);
             instruction_info_open = true;
             instuctiontitle.text = @"About Us";
-            instructiontext.text = @"\nThis app is created by: \nThe University of Western Ontario \n(The Department of Communications and Public Affair)\n\n\nIf you have any question, feel free to contact us at:\nWestminster Hall, Suite 360, 361 Windermere Rd.\nLondon, Ontario\nCanada";
+            instructiontext.text = @"\nThis app is created by: \nThe University of Western Ontario \n(The Department of Communications and Public Affair)\n\n\nIf you have any question, feel free to contact us at:\n Westminster Hall, Suite 360 \n 361 Windermere Rd.\n London, Ontario\n Canada";
+            instructiontext.font = [UIFont boldSystemFontOfSize:15];
         }
     }];
 }
