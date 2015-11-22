@@ -12,6 +12,8 @@
 		09009F681C152CEF007E5857 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 09009F671C152CEF007E5857 /* stop.png */; };
 		09009F6A1C153BE4007E5857 /* purple-glass-button-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 09009F691C153BE4007E5857 /* purple-glass-button-shadow.png */; };
 		09009F6C1C153E79007E5857 /* buttonicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09009F6B1C153E79007E5857 /* buttonicon.png */; };
+		090B36471C162CE6003E69EE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 090B36461C162CE6003E69EE /* Icon.png */; };
+		090B36491C162D93003E69EE /* Icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 090B36481C162D93003E69EE /* Icon2.png */; };
 		0949FC441A95944000C624DD /* JDNewsRestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949FC431A95944000C624DD /* JDNewsRestModel.m */; };
 		0949FC4C1A9667D200C624DD /* JDRestKitConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949FC4B1A9667D200C624DD /* JDRestKitConfiguration.m */; };
 		0949FC4F1A9690F400C624DD /* JDSongDescriptorRestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949FC4E1A9690F400C624DD /* JDSongDescriptorRestModel.m */; };
@@ -64,6 +66,8 @@
 		09009F671C152CEF007E5857 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		09009F691C153BE4007E5857 /* purple-glass-button-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "purple-glass-button-shadow.png"; path = "../../Downloads/purple-glass-button-shadow.png"; sourceTree = "<group>"; };
 		09009F6B1C153E79007E5857 /* buttonicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonicon.png; sourceTree = "<group>"; };
+		090B36461C162CE6003E69EE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		090B36481C162D93003E69EE /* Icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon2.png; sourceTree = "<group>"; };
 		0949FC421A95944000C624DD /* JDNewsRestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNewsRestModel.h; sourceTree = "<group>"; };
 		0949FC431A95944000C624DD /* JDNewsRestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNewsRestModel.m; sourceTree = "<group>"; };
 		0949FC4A1A9667D200C624DD /* JDRestKitConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDRestKitConfiguration.h; sourceTree = "<group>"; };
@@ -234,6 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				096C70BC1AA94265009EBB71 /* entities.strings */,
+				090B36481C162D93003E69EE /* Icon2.png */,
+				090B36461C162CE6003E69EE /* Icon.png */,
 				09F16DA21A672CF400AA7B5C /* sheetmusic.jpg */,
 				095B201819E36D58004BB1D9 /* mute_icon.gif */,
 				09009F631C1528D2007E5857 /* music1.png */,
@@ -426,6 +432,7 @@
 				09009F6A1C153BE4007E5857 /* purple-glass-button-shadow.png in Resources */,
 				09009F6C1C153E79007E5857 /* buttonicon.png in Resources */,
 				095B201919E36D58004BB1D9 /* mute_icon.gif in Resources */,
+				090B36491C162D93003E69EE /* Icon2.png in Resources */,
 				0949FC5B1A96B92D00C624DD /* application.plist in Resources */,
 				09009F681C152CEF007E5857 /* stop.png in Resources */,
 				09009F641C1528D2007E5857 /* music1.png in Resources */,
@@ -435,6 +442,7 @@
 				096C70BD1AA94265009EBB71 /* entities.strings in Resources */,
 				D0777249192ACD6200F9993A /* Main_iPhone.storyboard in Resources */,
 				09F16DA31A672CF400AA7B5C /* sheetmusic.jpg in Resources */,
+				090B36471C162CE6003E69EE /* Icon.png in Resources */,
 				D0777240192ACD6200F9993A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
