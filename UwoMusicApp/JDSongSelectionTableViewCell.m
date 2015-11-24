@@ -48,24 +48,22 @@
  - (UIImage *)imageWithMediaURL:(NSURL *)url {
     NSDictionary *opts = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:NO]
                                                      forKey:AVURLAssetPreferPreciseDurationAndTimingKey];
-    // 初始化媒体文件
+    // setup the media file
     AVURLAsset *urlAsset = [AVURLAsset URLAssetWithURL:url options:opts];
-    // 根据asset构造一张图
+    // generate an image
     AVAssetImageGenerator *generator = [AVAssetImageGenerator assetImageGeneratorWithAsset:urlAsset];
-    // 设定缩略图的方向
-    // 如果不设定，可能会在视频旋转90/180/270°时，获取到的缩略图是被旋转过的，而不是正向的（自己的理解）
+
     generator.appliesPreferredTrackTransform = YES;
-    // 设置图片的最大size(分辨率)
+    // set maximum size of image
     generator.maximumSize = CGSizeMake(600, 450);
-    // 初始化error
+    // setup error
     NSError *error = nil;
-    // 根据时间，获得第N帧的图片
-    // CMTimeMake(a, b)可以理解为获得第a/b秒的frame
+    // setup thumbnail accroding to the time
     CGImageRef img = [generator copyCGImageAtTime:CMTimeMake(0, 10000) actualTime:NULL error:&error];
-    // 构造图片
+    // get thumbnail
     UIImage *image = [UIImage imageWithCGImage: img];
      if(error){
-         NSLog(@"There exist an error when trying to get the image：%@",error.localizedDescription);
+         NSLog(@"There exist an error when trying to get the thumbnail：%@",error.localizedDescription);
      }
     return image;
 }
