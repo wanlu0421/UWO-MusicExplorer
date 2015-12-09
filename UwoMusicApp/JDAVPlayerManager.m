@@ -116,6 +116,16 @@ static const NSString *ItemTracksContext = @"ITEMTRACKSCONTEXT";
     [mAudioTracks setObject:myAudioTrack forKey:key];
 }
 
+- (void)replaceAudioTrack:(JDAudioTrack *)audioTrack
+        withNewAudioTrack:(JDAudioTrack *)newAudioTrack
+                   andKey:(NSString *)key
+{
+  [mInputParams removeObject:[audioTrack getAudioMixInputParams]];
+  [mInputParams addObject:[newAudioTrack getAudioMixInputParams]];
+  
+  [mAudioTracks setObject:newAudioTrack forKey:key];
+}
+
 -(AVPlayerItem*)playerItem {
     return self.mPlayerItem;
 }
@@ -155,12 +165,34 @@ static const NSString *ItemTracksContext = @"ITEMTRACKSCONTEXT";
         NSString* name = (NSString*)trackNames[i];
         float volume = [newVolumes[i] floatValue];
         JDAudioTrack* track = (JDAudioTrack*)mAudioTracks[name];
+      
+      // Solve the problem of track failure
+      /* 
+       * block this part
         if ([track isMuted])
             [track setVolume:0.0f];
         else
             [track setVolume:volume];
+       * instead of the following part
+       */
+      
+      
+      JDAudioTrack *newTrack = [[JDAudioTrack alloc] init];
+      [newTrack setTrack:track.mAudioTrack TrackID:track.mTrackId];
+      [newTrack getAudioMixInputParams];
+      
+      if ([track isMuted]) {
+        [newTrack setVolume:0.0f];
+        [newTrack setMuted:true];
+      } else {
+        [newTrack setVolume:volume];
+        [newTrack setMuted:false];
+      }
+      [self replaceAudioTrack:track withNewAudioTrack:newTrack andKey:name];
+
     }
-    
+    mAudioMix.inputParameters = mInputParams;
+  
     // Need to set the audio mix again to update the new volumes
     self.mPlayerItem.audioMix = mAudioMix;
 

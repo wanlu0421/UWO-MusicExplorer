@@ -11,6 +11,7 @@
 @implementation JDAudioTrack
 
 @synthesize mTrackMixInputParams, mTrackParams, mTrackURL;
+@synthesize mAudioTrack, mTrackId;
 
 -(void)setTrack:(AVPlayerItemTrack *)audioTrack TrackID:(CMPersistentTrackID)trackId {
     mTrackId = trackId;
@@ -19,13 +20,15 @@
 }
 
 -(AVAudioMixInputParameters*)getAudioMixInputParams {
-    mTrackMixInputParams = [AVMutableAudioMixInputParameters
-                            audioMixInputParameters];
-    [mTrackMixInputParams setVolume:1.0 atTime:kCMTimeZero];
-    [mTrackMixInputParams setTrackID:mTrackId];
-    
-    mTrackParams = mTrackMixInputParams;
-    return mTrackParams;
+  if (mTrackMixInputParams == nil) {
+    mTrackMixInputParams = [AVMutableAudioMixInputParameters audioMixInputParameters];
+  }
+  // Doesn't need to set the volume when got the information from the track
+//  [mTrackMixInputParams setVolume:1.0 atTime:kCMTimeZero];
+  [mTrackMixInputParams setTrackID:mTrackId];
+  
+  mTrackParams = mTrackMixInputParams;
+  return mTrackParams;
 }
 
 -(void)setVolume:(float)volume {

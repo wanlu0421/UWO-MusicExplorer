@@ -22,6 +22,8 @@
 
 @property(nonatomic, strong) AVMutableAudioMixInputParameters* mTrackMixInputParams;
 @property(nonatomic, strong) AVAudioMixInputParameters* mTrackParams;
+@property(nonatomic, strong) AVPlayerItemTrack *mAudioTrack;
+@property(nonatomic, assign) CMPersistentTrackID mTrackId;
 @property(nonatomic, strong) NSURL* mTrackURL;
 
 -(void)setTrack:(AVPlayerItemTrack*)audioTrack TrackID:(CMPersistentTrackID)trackId;

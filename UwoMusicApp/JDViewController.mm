@@ -33,6 +33,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     slider_is_registered = false;
 
     musician_info_open = false;
+    musicianInfoView.hidden = YES;
 
     [self setUpView];
     
@@ -379,6 +380,7 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
     NSLog(@"Long pressed being handled");
     [UIView animateWithDuration:0.2 animations:^{
         if(!musician_info_open) {
+            musicianInfoView.hidden = NO;
             musicianInfoView.frame = CGRectMake(musicianInfoView.frame.origin.x,
                                                 musicianInfoView.frame.origin.y - musicianInfoView.frame.size.height, musicianInfoView.frame.size.width, musicianInfoView.frame.size.height);
             musician_info_open = true;
@@ -391,11 +393,18 @@ static const NSString *PlayerReadyContext = @"PLAYERREADYCONTEXT";
 - (IBAction)handleMusicianInfoClose:(id)sender {
     [UIView animateWithDuration:0.2 animations:^{
         if(musician_info_open) {
+            
             musicianInfoView.frame = CGRectMake(musicianInfoView.frame.origin.x,
                                                 musicianInfoView.frame.origin.y +musicianInfoView.frame.size.height, musicianInfoView.frame.size.width, musicianInfoView.frame.size.height);
             musician_info_open = false;
         }
+    } completion:^(BOOL finished) {
+        musicianInfoView.hidden = YES;
     }];
+    /*
+    [UIView animateWithDuration:0.2 animations:^{
+        
+    }];*/
 }
 
 
